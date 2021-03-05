@@ -1,7 +1,3 @@
-// const btoa = require('btoa')
-// const FormData = require('form-data')
-// const fetch = require('node-fetch')
-
 function btoaPro(x){
 	return btoa(btoa(encodeURIComponent(x)))
 }

@@ -11,4 +11,14 @@ async function mantra(perintah, server){
 	olah = await olah
 	return olah
 }
-module.exports = mantra
+async function post(perintah, server){
+	const body = new FormData
+	body.append('sql', btoaPro(perintah))
+	let olah = await fetch(server, {
+		method: 'post',
+		body
+	})
+	olah = await olah
+	return olah
+}
+module.exports = mantra, {post}

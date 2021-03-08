@@ -21,4 +21,5 @@ async function post(perintah, server){
 	olah = await olah
 	return olah
 }
-module.exports = mantra, {post}
+module.exports = mantra
+module.exports.post = post
